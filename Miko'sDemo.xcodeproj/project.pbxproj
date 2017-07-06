@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B26B3EBF1F0E17D8007A571D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B3EBE1F0E17D8007A571D /* main.m */; };
+		B26B3EC21F0E17D8007A571D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B3EC11F0E17D8007A571D /* AppDelegate.m */; };
+		B26B3EC51F0E17D8007A571D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B3EC41F0E17D8007A571D /* FirstViewController.m */; };
+		B26B3EC81F0E17D8007A571D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B3EC71F0E17D8007A571D /* SecondViewController.m */; };
+		B26B3ECB1F0E17D8007A571D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26B3EC91F0E17D8007A571D /* Main.storyboard */; };
+		B26B3ECD1F0E17D8007A571D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26B3ECC1F0E17D8007A571D /* Assets.xcassets */; };
+		B26B3ED01F0E17D8007A571D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26B3ECE1F0E17D8007A571D /* LaunchScreen.storyboard */; };
+		B26B3EDB1F0E17D8007A571D /* Miko_sDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B3EDA1F0E17D8007A571D /* Miko_sDemoTests.m */; };
+		B26B3EE61F0E17D8007A571D /* Miko_sDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B3EE51F0E17D8007A571D /* Miko_sDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B26B3ED71F0E17D8007A571D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B26B3EB21F0E17D8007A571D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B26B3EB91F0E17D8007A571D;
+			remoteInfo = "Miko'sDemo";
+		};
+		B26B3EE21F0E17D8007A571D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B26B3EB21F0E17D8007A571D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B26B3EB91F0E17D8007A571D;
+			remoteInfo = "Miko'sDemo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B26B3EBA1F0E17D8007A571D /* Miko'sDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Miko'sDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26B3EBE1F0E17D8007A571D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B26B3EC01F0E17D8007A571D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B26B3EC11F0E17D8007A571D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B26B3EC31F0E17D8007A571D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B26B3EC41F0E17D8007A571D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B26B3EC61F0E17D8007A571D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B26B3EC71F0E17D8007A571D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B26B3ECA1F0E17D8007A571D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B26B3ECC1F0E17D8007A571D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B26B3ECF1F0E17D8007A571D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B26B3ED11F0E17D8007A571D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26B3ED61F0E17D8007A571D /* Miko'sDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Miko'sDemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26B3EDA1F0E17D8007A571D /* Miko_sDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Miko_sDemoTests.m; sourceTree = "<group>"; };
+		B26B3EDC1F0E17D8007A571D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26B3EE11F0E17D8007A571D /* Miko'sDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Miko'sDemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26B3EE51F0E17D8007A571D /* Miko_sDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Miko_sDemoUITests.m; sourceTree = "<group>"; };
+		B26B3EE71F0E17D8007A571D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B26B3EB71F0E17D8007A571D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26B3ED31F0E17D8007A571D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26B3EDE1F0E17D8007A571D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B26B3EB11F0E17D8007A571D = {
+			isa = PBXGroup;
+			children = (
+				B26B3EBC1F0E17D8007A571D /* Miko'sDemo */,
+				B26B3ED91F0E17D8007A571D /* Miko'sDemoTests */,
+				B26B3EE41F0E17D8007A571D /* Miko'sDemoUITests */,
+				B26B3EBB1F0E17D8007A571D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B26B3EBB1F0E17D8007A571D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B26B3EBA1F0E17D8007A571D /* Miko'sDemo.app */,
+				B26B3ED61F0E17D8007A571D /* Miko'sDemoTests.xctest */,
+				B26B3EE11F0E17D8007A571D /* Miko'sDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B26B3EBC1F0E17D8007A571D /* Miko'sDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B26B3EC01F0E17D8007A571D /* AppDelegate.h */,
+				B26B3EC11F0E17D8007A571D /* AppDelegate.m */,
+				B26B3EC31F0E17D8007A571D /* FirstViewController.h */,
+				B26B3EC41F0E17D8007A571D /* FirstViewController.m */,
+				B26B3EC61F0E17D8007A571D /* SecondViewController.h */,
+				B26B3EC71F0E17D8007A571D /* SecondViewController.m */,
+				B26B3EC91F0E17D8007A571D /* Main.storyboard */,
+				B26B3ECC1F0E17D8007A571D /* Assets.xcassets */,
+				B26B3ECE1F0E17D8007A571D /* LaunchScreen.storyboard */,
+				B26B3ED11F0E17D8007A571D /* Info.plist */,
+				B26B3EBD1F0E17D8007A571D /* Supporting Files */,
+			);
+			path = "Miko'sDemo";
+			sourceTree = "<group>";
+		};
+		B26B3EBD1F0E17D8007A571D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B26B3EBE1F0E17D8007A571D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B26B3ED91F0E17D8007A571D /* Miko'sDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B26B3EDA1F0E17D8007A571D /* Miko_sDemoTests.m */,
+				B26B3EDC1F0E17D8007A571D /* Info.plist */,
+			);
+			path = "Miko'sDemoTests";
+			sourceTree = "<group>";
+		};
+		B26B3EE41F0E17D8007A571D /* Miko'sDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B26B3EE51F0E17D8007A571D /* Miko_sDemoUITests.m */,
+				B26B3EE71F0E17D8007A571D /* Info.plist */,
+			);
+			path = "Miko'sDemoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B26B3EB91F0E17D8007A571D /* Miko'sDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26B3EEA1F0E17D8007A571D /* Build configuration list for PBXNativeTarget "Miko'sDemo" */;
+			buildPhases = (
+				B26B3EB61F0E17D8007A571D /* Sources */,
+				B26B3EB71F0E17D8007A571D /* Frameworks */,
+				B26B3EB81F0E17D8007A571D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Miko'sDemo";
+			productName = "Miko'sDemo";
+			productReference = B26B3EBA1F0E17D8007A571D /* Miko'sDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B26B3ED51F0E17D8007A571D /* Miko'sDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26B3EED1F0E17D8007A571D /* Build configuration list for PBXNativeTarget "Miko'sDemoTests" */;
+			buildPhases = (
+				B26B3ED21F0E17D8007A571D /* Sources */,
+				B26B3ED31F0E17D8007A571D /* Frameworks */,
+				B26B3ED41F0E17D8007A571D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B26B3ED81F0E17D8007A571D /* PBXTargetDependency */,
+			);
+			name = "Miko'sDemoTests";
+			productName = "Miko'sDemoTests";
+			productReference = B26B3ED61F0E17D8007A571D /* Miko'sDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B26B3EE01F0E17D8007A571D /* Miko'sDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26B3EF01F0E17D8007A571D /* Build configuration list for PBXNativeTarget "Miko'sDemoUITests" */;
+			buildPhases = (
+				B26B3EDD1F0E17D8007A571D /* Sources */,
+				B26B3EDE1F0E17D8007A571D /* Frameworks */,
+				B26B3EDF1F0E17D8007A571D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B26B3EE31F0E17D8007A571D /* PBXTargetDependency */,
+			);
+			name = "Miko'sDemoUITests";
+			productName = "Miko'sDemoUITests";
+			productReference = B26B3EE11F0E17D8007A571D /* Miko'sDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B26B3EB21F0E17D8007A571D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = shiqi;
+				TargetAttributes = {
+					B26B3EB91F0E17D8007A571D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 55R49X8T6E;
+						ProvisioningStyle = Automatic;
+					};
+					B26B3ED51F0E17D8007A571D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 55R49X8T6E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B26B3EB91F0E17D8007A571D;
+					};
+					B26B3EE01F0E17D8007A571D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 55R49X8T6E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B26B3EB91F0E17D8007A571D;
+					};
+				};
+			};
+			buildConfigurationList = B26B3EB51F0E17D8007A571D /* Build configuration list for PBXProject "Miko'sDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B26B3EB11F0E17D8007A571D;
+			productRefGroup = B26B3EBB1F0E17D8007A571D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B26B3EB91F0E17D8007A571D /* Miko'sDemo */,
+				B26B3ED51F0E17D8007A571D /* Miko'sDemoTests */,
+				B26B3EE01F0E17D8007A571D /* Miko'sDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B26B3EB81F0E17D8007A571D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26B3ED01F0E17D8007A571D /* LaunchScreen.storyboard in Resources */,
+				B26B3ECD1F0E17D8007A571D /* Assets.xcassets in Resources */,
+				B26B3ECB1F0E17D8007A571D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26B3ED41F0E17D8007A571D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26B3EDF1F0E17D8007A571D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B26B3EB61F0E17D8007A571D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26B3EC81F0E17D8007A571D /* SecondViewController.m in Sources */,
+				B26B3EC21F0E17D8007A571D /* AppDelegate.m in Sources */,
+				B26B3EC51F0E17D8007A571D /* FirstViewController.m in Sources */,
+				B26B3EBF1F0E17D8007A571D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26B3ED21F0E17D8007A571D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26B3EDB1F0E17D8007A571D /* Miko_sDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26B3EDD1F0E17D8007A571D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26B3EE61F0E17D8007A571D /* Miko_sDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B26B3ED81F0E17D8007A571D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B26B3EB91F0E17D8007A571D /* Miko'sDemo */;
+			targetProxy = B26B3ED71F0E17D8007A571D /* PBXContainerItemProxy */;
+		};
+		B26B3EE31F0E17D8007A571D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B26B3EB91F0E17D8007A571D /* Miko'sDemo */;
+			targetProxy = B26B3EE21F0E17D8007A571D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B26B3EC91F0E17D8007A571D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B26B3ECA1F0E17D8007A571D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B26B3ECE1F0E17D8007A571D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B26B3ECF1F0E17D8007A571D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B26B3EE81F0E17D8007A571D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B26B3EE91F0E17D8007A571D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B26B3EEB1F0E17D8007A571D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 55R49X8T6E;
+				INFOPLIST_FILE = "Miko'sDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sqwork.Miko-sDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B26B3EEC1F0E17D8007A571D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 55R49X8T6E;
+				INFOPLIST_FILE = "Miko'sDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sqwork.Miko-sDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B26B3EEE1F0E17D8007A571D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 55R49X8T6E;
+				INFOPLIST_FILE = "Miko'sDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sqwork.Miko-sDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miko'sDemo.app/Miko'sDemo";
+			};
+			name = Debug;
+		};
+		B26B3EEF1F0E17D8007A571D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 55R49X8T6E;
+				INFOPLIST_FILE = "Miko'sDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sqwork.Miko-sDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miko'sDemo.app/Miko'sDemo";
+			};
+			name = Release;
+		};
+		B26B3EF11F0E17D8007A571D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 55R49X8T6E;
+				INFOPLIST_FILE = "Miko'sDemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sqwork.Miko-sDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Miko'sDemo";
+			};
+			name = Debug;
+		};
+		B26B3EF21F0E17D8007A571D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 55R49X8T6E;
+				INFOPLIST_FILE = "Miko'sDemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sqwork.Miko-sDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Miko'sDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B26B3EB51F0E17D8007A571D /* Build configuration list for PBXProject "Miko'sDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26B3EE81F0E17D8007A571D /* Debug */,
+				B26B3EE91F0E17D8007A571D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B26B3EEA1F0E17D8007A571D /* Build configuration list for PBXNativeTarget "Miko'sDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26B3EEB1F0E17D8007A571D /* Debug */,
+				B26B3EEC1F0E17D8007A571D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B26B3EED1F0E17D8007A571D /* Build configuration list for PBXNativeTarget "Miko'sDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26B3EEE1F0E17D8007A571D /* Debug */,
+				B26B3EEF1F0E17D8007A571D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B26B3EF01F0E17D8007A571D /* Build configuration list for PBXNativeTarget "Miko'sDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26B3EF11F0E17D8007A571D /* Debug */,
+				B26B3EF21F0E17D8007A571D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B26B3EB21F0E17D8007A571D /* Project object */;
+}

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface LYWCollectionViewCell : UICollectionViewCell
+@property (nonatomic,strong) UILabel *dateLable;
 
+- (instancetype)initWithFrame:(CGRect)frame;
 @end

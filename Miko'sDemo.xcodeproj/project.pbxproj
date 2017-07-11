@@ -19,6 +19,7 @@
 		B26B3EFC1F0E1DB1007A571D /* LYWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B3EFB1F0E1DB1007A571D /* LYWCollectionViewCell.m */; };
 		B26B3EFF1F0E1E35007A571D /* LYWCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B3EFE1F0E1E35007A571D /* LYWCollectionReusableView.m */; };
 		B26B3F021F0E2039007A571D /* NSDate+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B3F011F0E2039007A571D /* NSDate+EX.m */; };
+		B272E7871F134BC600DC96E6 /* SQTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B272E7861F134BC600DC96E6 /* SQTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		B26B3EFE1F0E1E35007A571D /* LYWCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYWCollectionReusableView.m; sourceTree = "<group>"; };
 		B26B3F001F0E2039007A571D /* NSDate+EX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+EX.h"; sourceTree = "<group>"; };
 		B26B3F011F0E2039007A571D /* NSDate+EX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+EX.m"; sourceTree = "<group>"; };
+		B272E7851F134BC600DC96E6 /* SQTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQTools.h; sourceTree = "<group>"; };
+		B272E7861F134BC600DC96E6 /* SQTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,7 @@
 		B26B3EBC1F0E17D8007A571D /* Miko'sDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B272E7841F1349BE00DC96E6 /* other */,
 				B26B3EF81F0E1D7F007A571D /* view */,
 				B26B3EF31F0E1A8E007A571D /* category */,
 				B26B3EC01F0E17D8007A571D /* AppDelegate.h */,
@@ -176,6 +180,15 @@
 				B26B3EFE1F0E1E35007A571D /* LYWCollectionReusableView.m */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		B272E7841F1349BE00DC96E6 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				B272E7851F134BC600DC96E6 /* SQTools.h */,
+				B272E7861F134BC600DC96E6 /* SQTools.m */,
+			);
+			name = other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26B3EFC1F0E1DB1007A571D /* LYWCollectionViewCell.m in Sources */,
+				B272E7871F134BC600DC96E6 /* SQTools.m in Sources */,
 				B26B3EC81F0E17D8007A571D /* SecondViewController.m in Sources */,
 				B26B3EFF1F0E1E35007A571D /* LYWCollectionReusableView.m in Sources */,
 				B26B3EC21F0E17D8007A571D /* AppDelegate.m in Sources */,
@@ -562,6 +576,7 @@
 				B26B3EEC1F0E17D8007A571D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B26B3EED1F0E17D8007A571D /* Build configuration list for PBXNativeTarget "Miko'sDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +585,7 @@
 				B26B3EEF1F0E17D8007A571D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B26B3EF01F0E17D8007A571D /* Build configuration list for PBXNativeTarget "Miko'sDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +594,7 @@
 				B26B3EF21F0E17D8007A571D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

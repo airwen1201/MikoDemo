@@ -10,6 +10,6 @@
 
 @interface LYWCollectionViewCell : UICollectionViewCell
 @property (nonatomic,strong) UILabel *dateLable;
-
+@property (nonatomic,assign) BOOL isSelect;
 - (instancetype)initWithFrame:(CGRect)frame;
 @end

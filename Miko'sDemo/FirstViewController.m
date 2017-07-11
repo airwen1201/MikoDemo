@@ -11,11 +11,18 @@
 #import "LYWCollectionViewCell.h"
 #import "LYWCollectionReusableView.h"
 
-@interface FirstViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface FirstViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>{
+    UIButton *rightBtn;
+    BOOL isPanban;
+    NSDate *selectDate;
+}
 
 @end
 
 #define NumberMounthes 12 //想要展示的月数
+
+#define LMUserInfoCachePath       [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"mikoDate.archiver"]
+
 
 static NSString *cellID = @"cellID";
 static NSString *headerID = @"headerID";
@@ -35,6 +42,8 @@ static NSString *footerID = @"footerID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    selectDate = [NSKeyedUnarchiver unarchiveObjectWithFile:LMUserInfoCachePath];
     // Do any additional setup after loading the view, typically from a nib.
     //定义星期视图,若为周末则字体颜色为绿色
     self.automaticallyAdjustsScrollViewInsets = NO;//关闭自动适应
@@ -111,17 +120,45 @@ static NSString *footerID = @"footerID";
         }
     }
     
+
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 0, 40, 20);
-    [btn setTitle:@"排班" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(paibanBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    rightBtn.frame = CGRectMake(0, 0, 80, 20);
+    [rightBtn setTitle:@"开始排班" forState:UIControlStateNormal];
+    [rightBtn addTarget:self action:@selector(rightBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [rightBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
+    
+    isPanban = NO;
+    
 }
 
-- (void)paibanBtnClick:(UIButton*)button
+
+- (void)rightBtnClick:(UIButton*)button
+{
+//    NSLog(@"222");
+//    if (isPanban == NO) {
+//        isPanban = YES;
+//        leftBtn.hidden = NO;
+//        [rightBtn setTitle:@"确定" forState:UIControlStateNormal];
+//    }else{
+//        isPanban = NO;
+//        leftBtn.hidden = YES;
+//        [rightBtn setTitle:@"排班" forState:UIControlStateNormal];
+//        [self showPanban];
+//    }
+    EASYLOADINGVIEW(@"宝宝请选择第一天上班的日子");
+    isPanban = YES;
+    selectDate = nil;
+    [[NSFileManager defaultManager] removeItemAtPath:LMUserInfoCachePath error:nil];
+    [_collectionView reloadData];
+}
+
+- (void)showPanban
 {
     
 }
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -132,13 +169,37 @@ static NSString *footerID = @"footerID";
 //这里是自定义cell,非常简单的自定义
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     LYWCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
-    UIView *blackgroundView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
-    blackgroundView.backgroundColor = [UIColor yellowColor];
+    cell.contentView.backgroundColor = [UIColor whiteColor];
+    for (UIView *view in cell.contentView.subviews) {
+        
+        [view removeFromSuperview];
+        
+    }
+//    UIView *blackgroundView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
+//    blackgroundView.backgroundColor = [UIColor yellowColor];
     cell.dateLable.text = [[_sixArray objectAtIndex:indexPath.section]objectAtIndex:indexPath.row];
     NSDate *date = [[NSDate alloc]init];
     NSInteger day = [date day:date];
     //设置单击后的颜色
-    cell.selectedBackgroundView = blackgroundView;
+//    cell.selectedBackgroundView = blackgroundView;
+
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    
+//    [formatter setDateFormat:[NSString stringWithFormat:@"%ld-%ld-%ld 10:00:00",([date year:date]+indexPath.section),(indexPath.section+1),(indexPath.row+1)]];
+    NSInteger year = ([date month:date] + indexPath.section -1)/12 + 2017;
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *ss = [NSString stringWithFormat:@"%ld-%ld-%@ 10:00:00",year,([date month:date]+indexPath.section)%12==0?12:([date month:date]+indexPath.section)%12,[[_sixArray objectAtIndex:indexPath.section]objectAtIndex:indexPath.row]];
+    NSDate *dd =[formatter dateFromString:ss];
+    if (selectDate&&dd)
+    {
+        if ([SQTools mikoIsWorkday:selectDate andToday:dd]) {
+            UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(1, 1, cell.contentView.frame.size.width-2, cell.contentView.frame.size.height-2)];
+            bgView.backgroundColor = [UIColor redColor];
+            [cell.contentView addSubview:bgView];
+//            cell.contentView.backgroundColor = [UIColor redColor];
+        }
+    }
     return cell;
 }
 
@@ -179,7 +240,19 @@ static NSString *footerID = @"footerID";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (isPanban == NO) {
+        return;
+    }
+    isPanban = NO;
+
     LYWCollectionViewCell *cell = [self collectionView:_collectionView cellForItemAtIndexPath:indexPath];
+   
+    
+    
+    
+    
+    
+    
     
     NSDate *currentDate = [[NSDate alloc]init];
     
@@ -198,6 +271,11 @@ static NSString *footerID = @"footerID";
         
         NSLog(@"%ld年%02ld月%02ld日",year,mounth,day);
         
+        selectDate = [SQTools dateWithYear:[NSString stringWithFormat:@"%ld",year] withMonth:[NSString stringWithFormat:@"%ld",mounth] withDay:[NSString stringWithFormat:@"%ld",day]];
+        
+        
+        BOOL succeeded = [NSKeyedArchiver archiveRootObject:selectDate toFile:LMUserInfoCachePath];
+        NSLog(@"%d",succeeded);
     }
     
     //排除空值cell
@@ -233,9 +311,24 @@ static NSString *footerID = @"footerID";
         [collectionView cellForItemAtIndexPath:indexPath].userInteractionEnabled = NO;
         
         [collectionView reloadData];
+        return;
         
     }
     
+    
+    LYWCollectionViewCell *cell10 = (LYWCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
+    cell10.isSelect = !cell10.isSelect;
+    
+    NSDate *date = [[NSDate alloc]  init];
+    
+    
+    
+//    if (cell10.isSelect) {
+//        cell10.backgroundColor = [UIColor redColor];
+//    }else{
+//        cell10.backgroundColor = [UIColor whiteColor];
+//    }
+    [_collectionView reloadData];
 }
 
 @end

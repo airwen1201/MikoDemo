@@ -160,7 +160,6 @@ static NSString *footerID = @"footerID";
 }
 
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -226,7 +225,7 @@ static NSString *footerID = @"footerID";
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
     if (kind == UICollectionElementKindSectionHeader) {
-        LYWCollectionReusableView *headerRV = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:headerID forIndexPath:indexPath];
+        LYWCollectionReusableView *headerRV  = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:headerID forIndexPath:indexPath];
         //自定义蓝色
         headerRV.backgroundColor = [UIColor blueColor];
         NSDate *currentDate = [[NSDate alloc]init];

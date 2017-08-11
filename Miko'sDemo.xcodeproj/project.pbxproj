@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53191C1DF6113279633CF0BB /* libPods-Miko'sDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D63A9B5D40457A6A5E714F88 /* libPods-Miko'sDemo.a */; };
+		B220AC661F3C79C600B9D92B /* JokeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B220AC651F3C79C600B9D92B /* JokeModel.m */; };
+		B220AC691F3C7D4500B9D92B /* JokeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B220AC681F3C7D4500B9D92B /* JokeTableViewCell.m */; };
+		B2223F351F3D894B00609314 /* UINavigationController+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = B2223F341F3D894B00609314 /* UINavigationController+EX.m */; };
+		B26334FB1F3C3E8E005C5312 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26334FA1F3C3E8E005C5312 /* MainViewController.m */; };
+		B26335021F3C48A1005C5312 /* JokeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26335011F3C48A1005C5312 /* JokeTableViewController.m */; };
+		B26335071F3C4B81005C5312 /* SQServiceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B26335061F3C4B81005C5312 /* SQServiceUtil.m */; };
+		B263350A1F3C5900005C5312 /* SQLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B26335091F3C5900005C5312 /* SQLoadingView.m */; };
 		B26B3EBF1F0E17D8007A571D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B3EBE1F0E17D8007A571D /* main.m */; };
 		B26B3EC21F0E17D8007A571D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B3EC11F0E17D8007A571D /* AppDelegate.m */; };
 		B26B3EC51F0E17D8007A571D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B3EC41F0E17D8007A571D /* FirstViewController.m */; };
@@ -40,6 +48,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0605D68D5A588844C534EBCA /* Pods-Miko'sDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miko'sDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miko'sDemo/Pods-Miko'sDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B0E113C820D1DA822DCFA51C /* Pods-Miko'sDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miko'sDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Miko'sDemo/Pods-Miko'sDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B220AC641F3C79C600B9D92B /* JokeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokeModel.h; sourceTree = "<group>"; };
+		B220AC651F3C79C600B9D92B /* JokeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokeModel.m; sourceTree = "<group>"; };
+		B220AC671F3C7D4500B9D92B /* JokeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokeTableViewCell.h; sourceTree = "<group>"; };
+		B220AC681F3C7D4500B9D92B /* JokeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokeTableViewCell.m; sourceTree = "<group>"; };
+		B2223F331F3D894B00609314 /* UINavigationController+EX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+EX.h"; sourceTree = "<group>"; };
+		B2223F341F3D894B00609314 /* UINavigationController+EX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+EX.m"; sourceTree = "<group>"; };
+		B26334F91F3C3E8E005C5312 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B26334FA1F3C3E8E005C5312 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B26335001F3C48A1005C5312 /* JokeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokeTableViewController.h; sourceTree = "<group>"; };
+		B26335011F3C48A1005C5312 /* JokeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokeTableViewController.m; sourceTree = "<group>"; };
+		B26335041F3C4903005C5312 /* SQApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQApi.h; sourceTree = "<group>"; };
+		B26335051F3C4B81005C5312 /* SQServiceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQServiceUtil.h; sourceTree = "<group>"; };
+		B26335061F3C4B81005C5312 /* SQServiceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQServiceUtil.m; sourceTree = "<group>"; };
+		B26335081F3C5900005C5312 /* SQLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLoadingView.h; sourceTree = "<group>"; };
+		B26335091F3C5900005C5312 /* SQLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLoadingView.m; sourceTree = "<group>"; };
+		B263350B1F3C59AA005C5312 /* ShiQi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiQi.h; sourceTree = "<group>"; };
 		B26B3EBA1F0E17D8007A571D /* Miko'sDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Miko'sDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26B3EBE1F0E17D8007A571D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B26B3EC01F0E17D8007A571D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +93,7 @@
 		B26B3F011F0E2039007A571D /* NSDate+EX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+EX.m"; sourceTree = "<group>"; };
 		B272E7851F134BC600DC96E6 /* SQTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQTools.h; sourceTree = "<group>"; };
 		B272E7861F134BC600DC96E6 /* SQTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQTools.m; sourceTree = "<group>"; };
+		D63A9B5D40457A6A5E714F88 /* libPods-Miko'sDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Miko'sDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53191C1DF6113279633CF0BB /* libPods-Miko'sDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +122,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26929E334035ECE36F95096D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0E113C820D1DA822DCFA51C /* Pods-Miko'sDemo.debug.xcconfig */,
+				0605D68D5A588844C534EBCA /* Pods-Miko'sDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7EE3A55EEB42882CB9B940B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D63A9B5D40457A6A5E714F88 /* libPods-Miko'sDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B26334FC1F3C47F1005C5312 /* joke */ = {
+			isa = PBXGroup;
+			children = (
+				B26334FF1F3C4870005C5312 /* model */,
+				B26334FE1F3C4869005C5312 /* view */,
+				B26334FD1F3C485F005C5312 /* controller */,
+			);
+			name = joke;
+			sourceTree = "<group>";
+		};
+		B26334FD1F3C485F005C5312 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				B26335001F3C48A1005C5312 /* JokeTableViewController.h */,
+				B26335011F3C48A1005C5312 /* JokeTableViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		B26334FE1F3C4869005C5312 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B220AC671F3C7D4500B9D92B /* JokeTableViewCell.h */,
+				B220AC681F3C7D4500B9D92B /* JokeTableViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		B26334FF1F3C4870005C5312 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B220AC641F3C79C600B9D92B /* JokeModel.h */,
+				B220AC651F3C79C600B9D92B /* JokeModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		B26335031F3C48C6005C5312 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				B26335041F3C4903005C5312 /* SQApi.h */,
+				B26335051F3C4B81005C5312 /* SQServiceUtil.h */,
+				B26335061F3C4B81005C5312 /* SQServiceUtil.m */,
+			);
+			name = networking;
+			sourceTree = "<group>";
+		};
 		B26B3EB11F0E17D8007A571D = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +193,8 @@
 				B26B3ED91F0E17D8007A571D /* Miko'sDemoTests */,
 				B26B3EE41F0E17D8007A571D /* Miko'sDemoUITests */,
 				B26B3EBB1F0E17D8007A571D /* Products */,
+				26929E334035ECE36F95096D /* Pods */,
+				7EE3A55EEB42882CB9B940B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,11 +211,15 @@
 		B26B3EBC1F0E17D8007A571D /* Miko'sDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B26335031F3C48C6005C5312 /* networking */,
+				B26334FC1F3C47F1005C5312 /* joke */,
 				B272E7841F1349BE00DC96E6 /* other */,
 				B26B3EF81F0E1D7F007A571D /* view */,
 				B26B3EF31F0E1A8E007A571D /* category */,
 				B26B3EC01F0E17D8007A571D /* AppDelegate.h */,
 				B26B3EC11F0E17D8007A571D /* AppDelegate.m */,
+				B26334F91F3C3E8E005C5312 /* MainViewController.h */,
+				B26334FA1F3C3E8E005C5312 /* MainViewController.m */,
 				B26B3EC31F0E17D8007A571D /* FirstViewController.h */,
 				B26B3EC41F0E17D8007A571D /* FirstViewController.m */,
 				B26B3EC61F0E17D8007A571D /* SecondViewController.h */,
@@ -167,6 +265,8 @@
 			children = (
 				B26B3F001F0E2039007A571D /* NSDate+EX.h */,
 				B26B3F011F0E2039007A571D /* NSDate+EX.m */,
+				B2223F331F3D894B00609314 /* UINavigationController+EX.h */,
+				B2223F341F3D894B00609314 /* UINavigationController+EX.m */,
 			);
 			name = category;
 			sourceTree = "<group>";
@@ -185,8 +285,11 @@
 		B272E7841F1349BE00DC96E6 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				B263350B1F3C59AA005C5312 /* ShiQi.h */,
 				B272E7851F134BC600DC96E6 /* SQTools.h */,
 				B272E7861F134BC600DC96E6 /* SQTools.m */,
+				B26335081F3C5900005C5312 /* SQLoadingView.h */,
+				B26335091F3C5900005C5312 /* SQLoadingView.m */,
 			);
 			name = other;
 			sourceTree = "<group>";
@@ -198,9 +301,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B26B3EEA1F0E17D8007A571D /* Build configuration list for PBXNativeTarget "Miko'sDemo" */;
 			buildPhases = (
+				47D72E90609A630874F26F34 /* [CP] Check Pods Manifest.lock */,
 				B26B3EB61F0E17D8007A571D /* Sources */,
 				B26B3EB71F0E17D8007A571D /* Frameworks */,
 				B26B3EB81F0E17D8007A571D /* Resources */,
+				6E31B56DF35B4F46B96F9F09 /* [CP] Embed Pods Frameworks */,
+				4C043CB514C105F1D86BE4A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,6 +428,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47D72E90609A630874F26F34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4C043CB514C105F1D86BE4A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Miko'sDemo/Pods-Miko'sDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E31B56DF35B4F46B96F9F09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Miko'sDemo/Pods-Miko'sDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B26B3EB61F0E17D8007A571D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -329,12 +483,19 @@
 			files = (
 				B26B3EFC1F0E1DB1007A571D /* LYWCollectionViewCell.m in Sources */,
 				B272E7871F134BC600DC96E6 /* SQTools.m in Sources */,
+				B2223F351F3D894B00609314 /* UINavigationController+EX.m in Sources */,
+				B26335021F3C48A1005C5312 /* JokeTableViewController.m in Sources */,
 				B26B3EC81F0E17D8007A571D /* SecondViewController.m in Sources */,
 				B26B3EFF1F0E1E35007A571D /* LYWCollectionReusableView.m in Sources */,
+				B220AC661F3C79C600B9D92B /* JokeModel.m in Sources */,
+				B26334FB1F3C3E8E005C5312 /* MainViewController.m in Sources */,
 				B26B3EC21F0E17D8007A571D /* AppDelegate.m in Sources */,
+				B263350A1F3C5900005C5312 /* SQLoadingView.m in Sources */,
 				B26B3F021F0E2039007A571D /* NSDate+EX.m in Sources */,
 				B26B3EC51F0E17D8007A571D /* FirstViewController.m in Sources */,
 				B26B3EBF1F0E17D8007A571D /* main.m in Sources */,
+				B220AC691F3C7D4500B9D92B /* JokeTableViewCell.m in Sources */,
+				B26335071F3C4B81005C5312 /* SQServiceUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +636,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -483,27 +645,33 @@
 		};
 		B26B3EEB1F0E17D8007A571D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0E113C820D1DA822DCFA51C /* Pods-Miko'sDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 55R49X8T6E;
 				GCC_PREFIX_HEADER = "Miko'sDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = "Miko'sDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sqwork.Miko-sDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		B26B3EEC1F0E17D8007A571D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0605D68D5A588844C534EBCA /* Pods-Miko'sDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 55R49X8T6E;
 				GCC_PREFIX_HEADER = "Miko'sDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = "Miko'sDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sqwork.Miko-sDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

@@ -11,5 +11,6 @@
 
 #import "SQTools.h"
 #import "SQLoadingView.h"
+#import "SQAdvertisingScrollView.h"
 
 #endif /* ShiQi_h */

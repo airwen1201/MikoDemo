@@ -61,7 +61,7 @@
 - (void)loadData
 {
     NSDictionary *dict = @{
-                           @"key":APPKEYFORAVATAR,
+                           @"key":JOKEAPPKEY,
                            @"time":joketime,
                            @"sort":@"desc",
                            @"page":@(page),

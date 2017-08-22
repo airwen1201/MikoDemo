@@ -18,6 +18,8 @@ static NSString* mainTableViewCell = @"mainCell";
     NSArray *cellTitles;
 }
 @property(nonatomic,strong)NSMutableArray<AdvertisingModel*> *adArray;
+@property(nonatomic,strong)PageControlView * pageViewController;
+@property(nonatomic,strong)NSArray *imageArr;
 @end
 
 @implementation MainViewController
@@ -30,11 +32,27 @@ static NSString* mainTableViewCell = @"mainCell";
     return _adArray;
 }
 
+-(NSArray *)imageArr
+{
+    if (!_imageArr) {
+        _imageArr = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5", nil];
+    }
+    return _imageArr;
+}
+
+-(PageControlView *)pageViewController
+{
+    if (_pageViewController == nil) {
+        _pageViewController = [[PageControlView instance] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) andImageList:self.imageArr];
+    }
+    return _pageViewController;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self loadTodayThings];
+    
+//    [self loadTodayThings];
     
     // Do any additional setup after loading the view.
     self.automaticallyAdjustsScrollViewInsets = NO;
@@ -52,7 +70,7 @@ static NSString* mainTableViewCell = @"mainCell";
     
     cellTitles = @[@"待定",@"开心一笑",@"待定",@"待定",@"待定",@"待定"];
     
-    
+    [SQAPPWINDOW addSubview:self.pageViewController];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -30,6 +30,8 @@
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define SQAppDelegate ((AppDelegate*)[[UIApplication sharedApplication] delegate])
+#define SQAPPWINDOW [UIApplication sharedApplication].delegate.window
 
 #define EASYLOADINGVIEW(sinA)\
 do{\

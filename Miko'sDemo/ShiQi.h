@@ -12,5 +12,7 @@
 #import "SQTools.h"
 #import "SQLoadingView.h"
 #import "SQAdvertisingScrollView.h"
+#import "PageControlView.h"
+#import "JJCPayCodeTextField.h"
 
 #endif /* ShiQi_h */

@@ -31,6 +31,13 @@
 		B26C5E9C1F3EF00300D68084 /* AdvertisingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B26C5E9B1F3EF00300D68084 /* AdvertisingModel.m */; };
 		B26C5E9F1F3EF14200D68084 /* NSString+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = B26C5E9E1F3EF14200D68084 /* NSString+EX.m */; };
 		B272E7871F134BC600DC96E6 /* SQTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B272E7861F134BC600DC96E6 /* SQTools.m */; };
+		B28A70F61F4AC3E700A8DC35 /* PageControlCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B28A70F11F4AC3E700A8DC35 /* PageControlCollectionViewCell.m */; };
+		B28A70F71F4AC3E700A8DC35 /* PageControlCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B28A70F21F4AC3E700A8DC35 /* PageControlCollectionViewCell.xib */; };
+		B28A70F81F4AC3E700A8DC35 /* PageControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = B28A70F41F4AC3E700A8DC35 /* PageControlView.m */; };
+		B28A70F91F4AC3E700A8DC35 /* PageControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B28A70F51F4AC3E700A8DC35 /* PageControlView.xib */; };
+		B2A231271F4C360C0034E392 /* JJCPayCodeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A231221F4C360C0034E392 /* JJCPayCodeTextField.m */; };
+		B2A231281F4C360C0034E392 /* JJCPayCodeTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A231241F4C360C0034E392 /* JJCPayCodeTextFieldCell.m */; };
+		B2A231291F4C360C0034E392 /* JJCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A231261F4C360C0034E392 /* JJCTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +109,18 @@
 		B26C5E9E1F3EF14200D68084 /* NSString+EX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EX.m"; sourceTree = "<group>"; };
 		B272E7851F134BC600DC96E6 /* SQTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQTools.h; sourceTree = "<group>"; };
 		B272E7861F134BC600DC96E6 /* SQTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQTools.m; sourceTree = "<group>"; };
+		B28A70F01F4AC3E700A8DC35 /* PageControlCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageControlCollectionViewCell.h; sourceTree = "<group>"; };
+		B28A70F11F4AC3E700A8DC35 /* PageControlCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageControlCollectionViewCell.m; sourceTree = "<group>"; };
+		B28A70F21F4AC3E700A8DC35 /* PageControlCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageControlCollectionViewCell.xib; sourceTree = "<group>"; };
+		B28A70F31F4AC3E700A8DC35 /* PageControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageControlView.h; sourceTree = "<group>"; };
+		B28A70F41F4AC3E700A8DC35 /* PageControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageControlView.m; sourceTree = "<group>"; };
+		B28A70F51F4AC3E700A8DC35 /* PageControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageControlView.xib; sourceTree = "<group>"; };
+		B2A231211F4C360C0034E392 /* JJCPayCodeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCPayCodeTextField.h; sourceTree = "<group>"; };
+		B2A231221F4C360C0034E392 /* JJCPayCodeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCPayCodeTextField.m; sourceTree = "<group>"; };
+		B2A231231F4C360C0034E392 /* JJCPayCodeTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCPayCodeTextFieldCell.h; sourceTree = "<group>"; };
+		B2A231241F4C360C0034E392 /* JJCPayCodeTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCPayCodeTextFieldCell.m; sourceTree = "<group>"; };
+		B2A231251F4C360C0034E392 /* JJCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCTextField.h; sourceTree = "<group>"; };
+		B2A231261F4C360C0034E392 /* JJCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCTextField.m; sourceTree = "<group>"; };
 		D63A9B5D40457A6A5E714F88 /* libPods-Miko'sDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Miko'sDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -202,6 +221,7 @@
 				B26B3ED91F0E17D8007A571D /* Miko'sDemoTests */,
 				B26B3EE41F0E17D8007A571D /* Miko'sDemoUITests */,
 				B26B3EBB1F0E17D8007A571D /* Products */,
+				B26B3EBD1F0E17D8007A571D /* Supporting Files */,
 				26929E334035ECE36F95096D /* Pods */,
 				7EE3A55EEB42882CB9B940B4 /* Frameworks */,
 			);
@@ -239,7 +259,6 @@
 				B26B3ECE1F0E17D8007A571D /* LaunchScreen.storyboard */,
 				B26B3ED11F0E17D8007A571D /* Info.plist */,
 				B26B3EF71F0E1B11007A571D /* PrefixHeader.pch */,
-				B26B3EBD1F0E17D8007A571D /* Supporting Files */,
 			);
 			path = "Miko'sDemo";
 			sourceTree = "<group>";
@@ -250,6 +269,7 @@
 				B26B3EBE1F0E17D8007A571D /* main.m */,
 			);
 			name = "Supporting Files";
+			path = "Miko'sDemo";
 			sourceTree = "<group>";
 		};
 		B26B3ED91F0E17D8007A571D /* Miko'sDemoTests */ = {
@@ -313,8 +333,36 @@
 				B26335091F3C5900005C5312 /* SQLoadingView.m */,
 				B26C5E961F3EE69500D68084 /* SQAdvertisingScrollView.h */,
 				B26C5E971F3EE69500D68084 /* SQAdvertisingScrollView.m */,
+				B2A231201F4C360C0034E392 /* JJCPayCodeTextField */,
+				B28A70EF1F4AC3E700A8DC35 /* CCPageControl */,
 			);
 			name = other;
+			sourceTree = "<group>";
+		};
+		B28A70EF1F4AC3E700A8DC35 /* CCPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				B28A70F01F4AC3E700A8DC35 /* PageControlCollectionViewCell.h */,
+				B28A70F11F4AC3E700A8DC35 /* PageControlCollectionViewCell.m */,
+				B28A70F21F4AC3E700A8DC35 /* PageControlCollectionViewCell.xib */,
+				B28A70F31F4AC3E700A8DC35 /* PageControlView.h */,
+				B28A70F41F4AC3E700A8DC35 /* PageControlView.m */,
+				B28A70F51F4AC3E700A8DC35 /* PageControlView.xib */,
+			);
+			path = CCPageControl;
+			sourceTree = "<group>";
+		};
+		B2A231201F4C360C0034E392 /* JJCPayCodeTextField */ = {
+			isa = PBXGroup;
+			children = (
+				B2A231211F4C360C0034E392 /* JJCPayCodeTextField.h */,
+				B2A231221F4C360C0034E392 /* JJCPayCodeTextField.m */,
+				B2A231231F4C360C0034E392 /* JJCPayCodeTextFieldCell.h */,
+				B2A231241F4C360C0034E392 /* JJCPayCodeTextFieldCell.m */,
+				B2A231251F4C360C0034E392 /* JJCTextField.h */,
+				B2A231261F4C360C0034E392 /* JJCTextField.m */,
+			);
+			path = JJCPayCodeTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,6 +478,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26B3ED01F0E17D8007A571D /* LaunchScreen.storyboard in Resources */,
+				B28A70F91F4AC3E700A8DC35 /* PageControlView.xib in Resources */,
+				B28A70F71F4AC3E700A8DC35 /* PageControlCollectionViewCell.xib in Resources */,
 				B26B3ECD1F0E17D8007A571D /* Assets.xcassets in Resources */,
 				B26B3ECB1F0E17D8007A571D /* Main.storyboard in Resources */,
 			);
@@ -506,6 +556,8 @@
 			files = (
 				B26B3EFC1F0E1DB1007A571D /* LYWCollectionViewCell.m in Sources */,
 				B272E7871F134BC600DC96E6 /* SQTools.m in Sources */,
+				B2A231271F4C360C0034E392 /* JJCPayCodeTextField.m in Sources */,
+				B2A231281F4C360C0034E392 /* JJCPayCodeTextFieldCell.m in Sources */,
 				B26C5E981F3EE69500D68084 /* SQAdvertisingScrollView.m in Sources */,
 				B2223F351F3D894B00609314 /* UINavigationController+EX.m in Sources */,
 				B26335021F3C48A1005C5312 /* JokeTableViewController.m in Sources */,
@@ -513,8 +565,11 @@
 				B26B3EFF1F0E1E35007A571D /* LYWCollectionReusableView.m in Sources */,
 				B26C5E9C1F3EF00300D68084 /* AdvertisingModel.m in Sources */,
 				B220AC661F3C79C600B9D92B /* JokeModel.m in Sources */,
+				B28A70F81F4AC3E700A8DC35 /* PageControlView.m in Sources */,
 				B26334FB1F3C3E8E005C5312 /* MainViewController.m in Sources */,
 				B26B3EC21F0E17D8007A571D /* AppDelegate.m in Sources */,
+				B28A70F61F4AC3E700A8DC35 /* PageControlCollectionViewCell.m in Sources */,
+				B2A231291F4C360C0034E392 /* JJCTextField.m in Sources */,
 				B263350A1F3C5900005C5312 /* SQLoadingView.m in Sources */,
 				B26B3F021F0E2039007A571D /* NSDate+EX.m in Sources */,
 				B26B3EC51F0E17D8007A571D /* FirstViewController.m in Sources */,

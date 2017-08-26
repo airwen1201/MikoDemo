@@ -40,6 +40,8 @@ static NSString *footerID = @"footerID";
     NSMutableArray *_sixArray;
 }
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

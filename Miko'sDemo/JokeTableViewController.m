@@ -38,6 +38,7 @@
     self.tableView.estimatedRowHeight = 66.0f;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView registerClass:[JokeTableViewCell class] forCellReuseIdentifier:NSStringFromClass(JokeTableViewCell.class)];
     [self loadData];
     
@@ -111,6 +112,14 @@
     return cell;
 }
 
+
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    cell.separatorInset = UIEdgeInsetsZero;
+//    cell.layoutMargins = UIEdgeInsetsZero;
+//    cell.preservesSuperviewLayoutMargins = NO;
+    
+}
 
 /*
 // Override to support conditional editing of the table view.

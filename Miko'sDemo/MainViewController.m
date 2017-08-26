@@ -35,7 +35,7 @@ static NSString* mainTableViewCell = @"mainCell";
 -(NSArray *)imageArr
 {
     if (!_imageArr) {
-        _imageArr = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5", nil];
+        _imageArr = [NSArray arrayWithObjects:@"1",@"2", nil];
     }
     return _imageArr;
 }
@@ -71,6 +71,11 @@ static NSString* mainTableViewCell = @"mainCell";
     cellTitles = @[@"待定",@"开心一笑",@"待定",@"待定",@"待定",@"待定"];
     
     [SQAPPWINDOW addSubview:self.pageViewController];
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleDefault;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -118,6 +123,10 @@ static NSString* mainTableViewCell = @"mainCell";
     }
 }
 
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.separatorInset = UIEdgeInsetsZero;
+}
 
 
 #pragma mark - others
